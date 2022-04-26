@@ -26,7 +26,6 @@ section{
     "footer"
     ;
     grid-row-gap: 2rem;
-    grid-column-gap: 2rem;
     height: 100vh;
     width: 100%;
     justify-items: center;
@@ -161,6 +160,9 @@ section{
     text-align: center center;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
     border: solid #ffff 1rem;
+}
+.parallax h2{
+    font-size: 4rem;
 }
 .imgQuienesSomos{
     background-image: url(../Images/Centro\ integral2.jpg);
@@ -361,7 +363,7 @@ section{
     "footer footer"
     ;
     grid-template-columns: auto 400px;
-    grid-row-gap: 1rem;
+    grid-row-gap: 2rem;
     grid-column-gap: 1rem;
     height: 100vh;
     justify-items: center;
@@ -429,6 +431,10 @@ section{
     background-position: 50%;
     background-size: 50%;
 }
+.drArgenteCard:hover{
+    transform: translate(10px,-10px);
+    box-shadow: 10px 10px 10px rgb(6, 85, 72);
+}
 .drArgenteCard img{
     border-radius: 80px;
 }
@@ -442,6 +448,12 @@ section{
     margin-bottom: 2rem;
     border:solid #5b9283;
     text-align: center;
+    transition: transform 2s;
+}
+.profesionalesMedicos table:hover{
+    transform: scaleY(1.1);
+    transform: scaleX(1.1);
+    box-shadow: 10px 10px 10px rgb(6, 85, 72)
 }
 /* ESTUDIOS Y PROCEDIMIENTOS */
 #estudiosyproced{
@@ -495,6 +507,7 @@ section{
     "section3-Recetas"
     "footer "
     ;
+    grid-row-gap: 2rem;
 }
 /*760*/
 @media (max-width:765px) {
@@ -681,6 +694,7 @@ section{
     "section2-turnos"
     "footer"
     ;
+    grid-row-gap: 2rem;
 }
 /*760*/
 @media (max-width:765px) {
@@ -766,6 +780,7 @@ section{
     "section2-Contacto"
     "footer"
     ;
+    grid-row-gap: 2rem;
 }
 /*760*/
 @media (max-width:765px) {
@@ -857,12 +872,14 @@ section{
 
 /* FOOTER */
 #Piedepagina{
-    background-color: rgb(6, 85, 72);
+    /*background-color: rgb(6, 85, 72);*/
     top: 5rem;
     width: 100%;
     grid-area: footer;
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(to top, #236d77,#236d77,#236d77,#236d77,#236d77,#236d77,#d0f1ea);
+
 }
 .footer{
     display: flex;
@@ -884,6 +901,11 @@ section{
     color: #84d9c3;
 /*    margin: 30px 50px 0px 50px;*/
 }
+.footer a:hover {
+    color: #d0f1ea;
+    font-weight: bold;
+    text-shadow: 3px 3px rgba(9, 10, 10, 0.637);
+}
 .footer p{
     font-size: 80%;
     font-weight: normal;
@@ -904,10 +926,11 @@ section{
     margin-left: 2rem;
 }
 .footerFinal a{
-    height: min-content;
-    width: min-content;
-    margin: 10px;
-    display: inline-block;
+    transition: transform 2s;
+}
+.footerFinal a:hover{
+    transform:scaleX(1.2);
+    transform:scaleY(1.2)
 }
 footer p{
     font-size: 15px;
