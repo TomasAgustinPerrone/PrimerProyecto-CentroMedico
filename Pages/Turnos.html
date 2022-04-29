@@ -10,93 +10,114 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
     </head>
     <body>
-        <div id="contenedorTurnos">
+        <div id="contenedorTurnos" class="container-fluid">
         <!-- inicio encabezado -->
         <header id="Encabezado">
-            <div class="InicioDeEncabezado">
-                <img data-aos="fade-up"
-                data-aos-duration="3000" src="../Images/logo.png" alt="Logo">
-                <div class="datosYnav">
-                    <p data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500"> Turnos + 54 11 153522 2048 (011) 4431 4358 
-                    | BACACAY 947 - CP 1405
-                    CDAD. DE BS.AS. ARGENTINA
-                    </p>
-                    <nav>
-                        <ul>
-                            <li><a href="../Index.html">HOME</a></li>
-                            <li><a href="Serviciosmedicos.html">SERVICIOS MEDICOS</a></li>
-                                <ul>
-                                    <li><a href="Serviciosmedicos.html#especialidadesmedicas">Especialidades Medicas</a></li>
-                                    <li><a href="Serviciosmedicos.html#estudiosyproced">Estudios y procedimientos</a></li>
-                                </ul>
-                                <li><a href="Atencionalpaciente.html">ATENCION AL PACIENTE</a></li>
-                                <li><a href="Turnos.html">TURNOS</a></li>
-                                <li><a href="Contacto.html">CONTACTO</a></li>
-                        </ul>
-                    </nav>
+            <nav class="navbar navbar-expand-lg navbarbootstrap navbar-light nav row">
+                <div class="col-lg-2 col-md-2 col-sm-4">
+                    <img class="img-fluid" data-aos="fade-up" data-aos-duration="3000" src="../images/logo.png" alt="Logo">
                 </div>
-            </div>  
+                <button class="navbar-toggler col-lg-10 col-md-10 col-sm-4 justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon col-lg-10 col-md-10 col-sm-8"></span>
+                </button>
+                <div class="collapse navbar-collapse col-lg-10 col-md-10 col-sm-8" id="navbarSupportedContent"> 
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-tabs nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link" href="Index.html"  class="nav-link dropdown-toggle">HOME</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="pages/Serviciosmedicos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICIOS MEDICOS</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="Pages/Serviciosmedicos.html#Especialidadesmed">Especialidades Medicas</a></li>
+                                    <li><a class="dropdown-item" href="Pages/Serviciosmedicos.html#estudiosyproced">Estudios y procedimientos</a></li>
+                                </ul> 
+                        </li>                               
+                        <li class="nav-item"><a class="nav-link" href="pages/Atencionalpaciente.html">ATENCION AL PACIENTE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Pages/Turnos.html">TURNOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Pages/Contacto.html">CONTACTO</a></li>
+                    </ul>
+                </div>  
+            </nav>
             </header>
         <!--Inicio contenido-->
-        <section id="section1-turnos" >
-        <div class="parallax imgTurnos"><h2>TURNOS</h2></div>
-        </section>
-        <section id="section2-turnos">
+        <section id="section2-turnos" class="row">
+            <h2>TURNOS</h2>
             <div class="turnos" data-aos="zoom-out-right">
                 <h2>Solicita tu turno aqui</h2>
                 <form>
-                    <label for="nombre">Apellido y Nombre</label><br>
-                    <input type="text" name="nombre"><br>
-                    <label for="DNI">DNI</label><br>
-                    <input type="number" name="DNI"><br>
-                    <label for="telefono">Telefono (011)</label><br>
-                    <input type="number" name="telefono"><br>
-                    <label for="email">E-mail</label><br>
-                    <input type="email" name="email"><br>
-                    <label for="Obra social o prepaga">Posee Obra Social o Prepaga</label>
-                    <select name="Obra social o prepaga">
-                        <option value="swismed">SWISS MEDICAL</option>
-                        <option value="accordsalud">ACORD SALUD</option>
-                        <option value="medife">MEDIFE</option>
-                        <option value="Galeno">GALENO</option>
-                        <option value="Osde">OSDE</option>
-                        <option value="sancor">SANCOR SALUD</option>
-                    </select>
-                    <label for="Especialidad">Seleccione especialista / estudio</label>
-                    <select name="Especialidad">
-                        <option value="Argente">DR. ARGENTE - Traumatologia</option>
-                        <option value="Pastafiglia">DRA. PASTAFIGLIA - Nutricion</option>
-                        <option value="Fava">DRA. FAVA - Psiquiatria</option>
-                        <option value="Perez">DRA. PEREZ - Oftalmologia</option>
-                        <option value="Nuñez">DR. NUÑEZ - Reumatologia</option>
-                        <option value="Garcia">DRA. GARCIA - Clinica Medica</option>
-                        <option value="Livov">DR. LIVOV- Cardiologia</option>
-                        <option value="Toledo">DR. TOLEDO - Ginecologia y Obstetricia </option>
-                        <option value="Alcire">DRA. ALCIRE - Sexologia</option>
-                        <option value="Tucker">DRA. TUCKER - Cirugia Plastica y Estetica</option>
-                        <option value="Kine">LIC.PERRONE - Kinesiologia</option>
-                        <option value="RX">Radiografia</option>
-                        <option value="TAC">Tomografia Computada - Sin Contraste</option>
-                        <option value="TACc">Tomografia Computada - Con Contraste</option>
-                        <option value="RMN">Resonancia Magnetica - Sin Contraste</option>
-                        <option value="RMNc">Resonancia Magnetica - Con Contraste</option>
-                    </select>
+                    <div class="form-group"> 
+                        <label for="nombre">Apellido y Nombre</label><br>
+                        <input class= "form-control" type="text" name="nombre"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="DNI">DNI</label><br>
+                        <input class= "form-control" type="number" name="DNI"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Telefono (011)</label><br>
+                        <input class= "form-control" type="number" name="telefono"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input class= "form-control" type="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="Obra social o prepaga">Posee Obra Social o Prepaga</label>
+                        <select name="Obra social o prepaga">
+                            <option value="swismed">SWISS MEDICAL</option>
+                            <option value="accordsalud">ACORD SALUD</option>
+                            <option value="medife">MEDIFE</option>
+                            <option value="Galeno">GALENO</option>
+                            <option value="Osde">OSDE</option>
+                            <option value="sancor">SANCOR SALUD</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Especialidad">Seleccione especialista / estudio</label>
+                        <select class= "form-control" name="Especialidad">
+                            <option value="Argente">DR. ARGENTE - Traumatologia</option>
+                            <option value="Pastafiglia">DRA. PASTAFIGLIA - Nutricion</option>
+                            <option value="Fava">DRA. FAVA - Psiquiatria</option>
+                            <option value="Perez">DRA. PEREZ - Oftalmologia</option>
+                            <option value="Nuñez">DR. NUÑEZ - Reumatologia</option>
+                            <option value="Garcia">DRA. GARCIA - Clinica Medica</option>
+                            <option value="Livov">DR. LIVOV- Cardiologia</option>
+                            <option value="Toledo">DR. TOLEDO - Ginecologia y Obstetricia </option>
+                            <option value="Alcire">DRA. ALCIRE - Sexologia</option>
+                            <option value="Tucker">DRA. TUCKER - Cirugia Plastica y Estetica</option>
+                            <option value="Kine">LIC.PERRONE - Kinesiologia</option>
+                            <option value="RX">Radiografia</option>
+                            <option value="TAC">Tomografia Computada - Sin Contraste</option>
+                            <option value="TACc">Tomografia Computada - Con Contraste</option>
+                            <option value="RMN">Resonancia Magnetica - Sin Contraste</option>
+                            <option value="RMNc">Resonancia Magnetica - Con Contraste</option>
+                        </select>
+                    </div>
+                    <div>
                     <label for="orden de estudio">Adjunte orden</label>
-                    <input type="file" name="Orden de estudio" placeholder="adjuntar archivo">
-                    <input class="botonEnviar" type="submit"value="Enviar">
-                    <input class="botonLimpiar" type="reset"value="Limpiar">
+                    <input class= "form-control" type="file" name="Orden de estudio" placeholder="adjuntar archivo">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Añade tu comentario o solicitud" aria-label="Recipient's username with two button addons">
+                        <button class="btn btn-outline-secondary" type="submit">Enviar</button>
+                        <button class="btn btn-outline-secondary" type="reset">Limpiar</button>
+                    </div>
+                    <!-- <div>
+                        <input class="botonEnviar" type="submit"value="Enviar">
+                        <input class="botonLimpiar" type="reset"value="Limpiar">
+                    </div> -->
                 </form>
             </div>
         </section>
         <!-- inicio footer -->
-        <footer id="Piedepagina">
-            <div class="footer">
-                <img src="../Images/logo.png"  width="100px" height="100" alt="Logo" data-aos="fade-up-right">
+        <footer id="Piedepagina" class="row">
+            <div class="footer row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="../images/logo.png"  width="100px" height="100" alt="Logo" data-aos="fade-up-right">
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
                 <p data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1500">
@@ -104,20 +125,13 @@
                     | BACACAY 947 - CP 1405
                     CDAD. DE BS.AS. ARGENTINA
                 </p>
-                <a href="../Pages/Contacto.html">¿Queres trabajar con nosotros? Hace Click aca</a>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <a href="Pages/Contacto.html">¿Queres trabajar con nosotros? Hace Click aca</a>
+                </div>
             </div>
-            <aside><div class="footerFinal">
-                <h3>Trabajamos con</h3>
-                <a href="https://www.osde.com.ar/index.html#!homepage.html" target="_BLANK"><img src="../Images/OSDE.jpg" width="100" height="100" alt="Osde"></a>
-                    <a href="https://www.e-galenomovil.com.ar/CotizadorWeb/" target="_BLANK"><img src="../Images/galeno.png" width="100" height="100" alt="Galeno"></a>
-                    <a href="https://www.medife.com.ar/landing-quiero-asociarme?gclid=CjwKCAjwuYWSBhByEiwAKd_n_hf0Ho7wUshkabRj5cpYHctGdEKjhBSROXi-KO9DPJNmHGae7Pq7nRoCspQQAvD_BwE" target="_BLANK"><img src="../Images/galeno.png" width="100" height="100" alt="Medife"></a>
-                    <a href="https://www.accordsalud.com.ar/comercial/?gclid=CjwKCAjwuYWSBhByEiwAKd_n_ivwdPMltAnY2cFF9SFViv49GkQT3ThVn-gT7jHZUXdrGANeD6P7rBoCsH8QAvD_BwE" target="_BLANK"><img src="../Images/accord.png" width="100" height="100" alt="Accord salud"></a>
-                    <a href="https://www.sancorsalud.com.ar/" target="_BLANK"><img src="../Images/sancor.png" width="100" height="100" alt="Sancor Salud"></a>
-                    <a href="https://asociarme.swissmedical.com.ar/planes?utm_source=google&utm_medium=cpc&utm_campaign=GOOG-SEM-L-ALL-ALL-PROS-BRAND-CABA&gclid=CjwKCAjwuYWSBhByEiwAKd_n_raFtACPO2ES7kxn5pQZYc2hGJ7GuCfTs2DrjkhM-ULHeFx0P7PEzhoC7PwQAvD_BwE" target="_BLANK"><img src="../Images/sw2.jpg" width="100" height="100" alt="Swiss Medical"></a>
-            </aside>
             <P>Desarrollado por Tomas Perrone</P>
         </footer>
-    </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>

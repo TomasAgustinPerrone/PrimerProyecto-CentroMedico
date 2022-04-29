@@ -6,68 +6,112 @@
         <title>CentroIntegralCaballito</title>
         <link rel="shortcut icon" href="./Images/logo.png">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
     </head>
     <body> 
-        <div id="contenedor">
+        <div id="contenedor" class="container-fluid">
         <!-- inicio encabezado -->
             <header id="Encabezado">
-                <div class="InicioDeEncabezado">
-                    <img data-aos="fade-up"
-                    data-aos-duration="3000" src="Images/logo.png" alt="Logo">
-                    <div class="datosYnav">
-                        <p  data-aos="fade-down"
-                        data-aos-easing="linear"
-                        data-aos-duration="1500"> Turnos + 54 11 153522 2048 (011) 4431 4358 
-                        | BACACAY 947 - CP 1405
-                        CDAD. DE BS.AS. ARGENTINA
-                        </p>
-                        <nav>
-                            <ul>
-                                <li><a href="Index.html">HOME</a></li>
-                                <li><a href="pages/Serviciosmedicos.html">SERVICIOS MEDICOS</a></li>
-                                    <ul>
-                                        <li><a href="Pages/Serviciosmedicos.html#Especialidadesmed">Especialidades Medicas</a></li>
-                                        <li><a href="Pages/Serviciosmedicos.html#estudiosyproced">Estudios y procedimientos</a></li>
-                                    </ul>                                <li><a href="pages/Atencionalpaciente.html">ATENCION AL PACIENTE</a></li>
-                                <li><a href="Pages/Turnos.html">TURNOS</a></li>
-                                <li><a href="Pages/Contacto.html">CONTACTO</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+                            <nav class="navbar navbar-expand-lg navbarbootstrap navbar-light nav row">
+                                <div class="col-lg-2 col-md-2 col-sm-4">
+                                    <img class="img-fluid" data-aos="fade-up" data-aos-duration="3000" src="Images/logo.png" alt="Logo">
+                                </div>
+                                <button class="navbar-toggler col-lg-10 col-md-10 col-sm-4 justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon col-lg-10 col-md-10 col-sm-8"></span>
+                                </button>
+                                <div class="collapse navbar-collapse col-lg-10 col-md-10 col-sm-8" id="navbarSupportedContent"> 
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-tabs nav justify-content-end">
+                                        <li class="nav-item"><a class="nav-link" href="Index.html"  class="nav-link dropdown-toggle">HOME</a></li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="pages/Serviciosmedicos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            SERVICIOS MEDICOS</a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="Pages/Serviciosmedicos.html#Especialidadesmed">Especialidades Medicas</a></li>
+                                                    <li><a class="dropdown-item" href="Pages/Serviciosmedicos.html#estudiosyproced">Estudios y procedimientos</a></li>
+                                                </ul> 
+                                        </li>                               
+                                        <li class="nav-item"><a class="nav-link" href="pages/Atencionalpaciente.html">ATENCION AL PACIENTE</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Pages/Turnos.html">TURNOS</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Pages/Contacto.html">CONTACTO</a></li>
+                                    </ul>
+                                </div>  
+                            </nav>
             </header>
+            <section class="row">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Atencion a pacientes.jpg" class="d-block w-100 img-fluid img-thumbnail" alt="calidad de atencion">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Centro integral2.jpg" class="d-block w-100 img-fluid img-thumbnail" alt="Conoce nuestro centro">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/telemedicina.jpg" class="d-block w-100 img-fluid img-thumbnail" alt="boca">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
             <!-- Quienes somos -->
-            <section id="section1"> 
-                <div class="parallax imgQuienesSomos"><h2>¿QUIENES SOMOS?</h2></div>
-                <div class="quienesSomos">
-                    <p>Somos un Centro de Atención Médica que mediante la integración de diferentes especialidades, nos enfocamos en la asistencia de nuestros pacientes desde su nacimiento y logramos ganar su confianza con calidad humana, calidez, buen trato y con un óptimo nivel de atención profesional.
-                    Brindamos la infraestructura e instalaciones modernas con amplias salas de espera y consultorios cómodos para que los profesionales médicos atiendan a sus pacientes en un ambiente confortable y adecuadamente equipado.
-                    La administración del Centro corrobora que los profesionales cuenten con los requisitos de idoneidad en su especialidad y la correspondiente habilitación para su ejercicio.  Además, desarrollan su actividad de manera autónoma y establecen el nexo con Coberturas Médicas y Obras Sociales, a fin de brindar a sus afiliados el acceso a una atención médica calificada.</p>
-                    <p>El Centro Integral Caballito fue fundado por el Dr. Argente Sebastian en el año 2007 iniciado en ese entonces como su consultorio particular. Con la absoluta convicción, destinó sus estudios a la medicina clínica traumatologica y con ella incorporó la medicina preventiva. Así, con un gran amor por su profesión y una definida vocación de servicio, comenzó a crecer su sueño. Con los años sumó al proyecto a excelentes profesionales y equipamiento de vanguardia lo que permitió que el Centro Integral Caballito comenzara a crecer e incorporara una gran variedad de Servicios y Especialidades Médicas. Hoy en dia ya contamos con mas de 100 profesionales que dia a dia aportan su sabiduria y conocimiento a fin de brindar la calidad que caracteriza a nuestro centro.</p>
+            <main class="row">
+                <section class="col-sm-12 col-md-8 col-lg-8"> 
+                    <!-- <div class="parallax imgQuienesSomos"><h2>¿QUIENES SOMOS?</h2></div> -->
+                    <div class="quienesSomos flex-fill align-content-center">
+                        <h2>¿QUIENES SOMOS?</h2>
+                        <p>Somos un Centro de Atención Médica que mediante la integración de diferentes especialidades, nos enfocamos en la asistencia de nuestros pacientes desde su nacimiento y logramos ganar su confianza con calidad humana, calidez, buen trato y con un óptimo nivel de atención profesional.
+                        Brindamos la infraestructura e instalaciones modernas con amplias salas de espera y consultorios cómodos para que los profesionales médicos atiendan a sus pacientes en un ambiente confortable y adecuadamente equipado.
+                        La administración del Centro corrobora que los profesionales cuenten con los requisitos de idoneidad en su especialidad y la correspondiente habilitación para su ejercicio.  Además, desarrollan su actividad de manera autónoma y establecen el nexo con Coberturas Médicas y Obras Sociales, a fin de brindar a sus afiliados el acceso a una atención médica calificada.</p>
+                        <p>El Centro Integral Caballito fue fundado por el Dr. Argente Sebastian en el año 2007 iniciado en ese entonces como su consultorio particular. Con la absoluta convicción, destinó sus estudios a la medicina clínica traumatologica y con ella incorporó la medicina preventiva. Así, con un gran amor por su profesión y una definida vocación de servicio, comenzó a crecer su sueño. Con los años sumó al proyecto a excelentes profesionales y equipamiento de vanguardia lo que permitió que el Centro Integral Caballito comenzara a crecer e incorporara una gran variedad de Servicios y Especialidades Médicas. Hoy en dia ya contamos con mas de 100 profesionales que dia a dia aportan su sabiduria y conocimiento a fin de brindar la calidad que caracteriza a nuestro centro.</p>
+                </section>
+                <aside class="col-sm-12 col-md-4 col-lg-4">
                     <div  data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine" class="quienesSomos__horarios">
-                        <img src="./Images/reloj.png" alt="tiempo">
-                        <h3>HORARIOS DE ATENCION</h3>
-                        <table>
-                            <tr>
-                                <td>Lunes a Viernes</td>
-                                <td>De 08hs a 21hs.</td>
-                            </tr>
-                            <tr>
-                                <td>Sabados y Domingos</td>
-                                <td>Solo atencion por guardia.</td>
-                            </tr>
-                        </table>
-                        <a href="./Pages/Serviciosmedicos.html#profesionalesMedicos"><button>VER MAS</button></a>
+                    <img src="./Images/reloj.png" alt="tiempo">
+                    <h3>HORARIOS DE ATENCION</h3>
+                    <table>
+                        <tr>
+                            <td>Lunes a Viernes</td>
+                            <td>De 08hs a 21hs.</td>
+                        </tr>
+                        <tr>
+                            <td>Sabados y Domingos</td>
+                            <td>Solo atencion por guardia.</td>
+                        </tr>
+                    </table>
+                    <a href="./Pages/Serviciosmedicos.html#profesionalesMedicos"><button>VER MAS</button></a>
                     </div>
-                </div>
-            </section>
+                </aside>
+            </main>
             <!-- Derechos del paciente -->
             <!--<section id="section2">
                 <div class="covid19Card">
@@ -79,19 +123,27 @@
                     <a href="https://www.argentina.gob.ar/salud/coronavirus-COVID-19" target="_BLANK"><button>VER MAS</button></a>
                 </div>
             </section> -->
-            <aside id="aside" data-aos="zoom-out-down">
+            <aside class="iframes row"id="aside" data-aos="zoom-out-down">
+                <div class="col-sm-12 col-md-4 col-lg-4">
                 <iframe src="https://www.youtube.com/embed/tM6nDv8PSD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
                 <iframe src="https://www.youtube.com/embed/WvSdmpTm_B8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">   
                 <iframe src="https://www.youtube.com/embed/zhsNNiALN2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </aside>
             <!-- como llegar -->
             <section id="section3">
-                <div class="parallax2 imgComoLlegar"><h2>¿COMO LLEGAR?</h2></div>
-                <div data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000" class="comoLlegar">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4369275918316!2d-58.445286084769904!3d-34.61839728045571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3ee26f6511%3A0xe0cc3bc284f631a3!2sBacacay%20947%2C%20C1405CFG%20CABA!5e0!3m2!1ses-419!2sar!4v1648509028090!5m2!1ses-419!2sar";" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div class="comoLlegar--ubicacion">
+                <div>
+                    <h2>¿COMO LLEGAR?</h2>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic"data-aos-duration="2000" class="comoLlegar row ">
+                    <div class="col-sm-12 col-md-6 col-lg-6 bg-white">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4369275918316!2d-58.445286084769904!3d-34.61839728045571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3ee26f6511%3A0xe0cc3bc284f631a3!2sBacacay%20947%2C%20C1405CFG%20CABA!5e0!3m2!1ses-419!2sar!4v1648509028090!5m2!1ses-419!2sar";" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="comoLlegar--ubicacion col-sm-12 col-md-6 col-lg-6 bg-white">
                         <p> BACACAY 947, CABA</p>
                         <ul>
                             <li><strong>Colectivos</strong> 5 - 6 - 7 - 12 - 24 - 26 - 37 - 50 - 56 - 59 - 60 - 64 - 86 - 103 - 105 - 115 - 146 - 150 - 151 - 168 - 180</li>
@@ -101,10 +153,39 @@
                     </div>
                 </div>
             </section>
+            <aside>
+                <div class="conteiner">
+                    <div class="ObraSociales row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h2>Trabajamos con</h2>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 bg-transparente col ">
+                    <a href="https://www.osde.com.ar/index.html#!homepage.html" target="_BLANK"><img src="./Images/OSDE.jpg" width="100" height="100" alt="Osde"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 bg-transparente col">
+                    <a href="https://www.e-galenomovil.com.ar/CotizadorWeb/" target="_BLANK"><img src="./Images/galeno.png" width="100" height="100" alt="Galeno"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 bg-transparente col ">
+                    <a href="https://www.medife.com.ar/landing-quiero-asociarme?gclid=CjwKCAjwuYWSBhByEiwAKd_n_hf0Ho7wUshkabRj5cpYHctGdEKjhBSROXi-KO9DPJNmHGae7Pq7nRoCspQQAvD_BwE" target="_BLANK"><img src="./Images/Medife.png" width="100" height="100" alt="Medife"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 bg-transparente col ">
+                    <a href="https://www.accordsalud.com.ar/comercial/?gclid=CjwKCAjwuYWSBhByEiwAKd_n_ivwdPMltAnY2cFF9SFViv49GkQT3ThVn-gT7jHZUXdrGANeD6P7rBoCsH8QAvD_BwE" target="_BLANK"><img src="./Images/accord.png" width="100" height="100" alt="Accord salud"></a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2 bg-transparente col ">               
+                    <a href="https://www.sancorsalud.com.ar/" target="_BLANK"><img src="./Images/sancor.png" width="100" height="100" alt="Sancor Salud"></a>
+                    </div> 
+                    <div class="col-sm-6 col-md-4 col-lg-2 bg-transparente col">
+                    <a href="https://asociarme.swissmedical.com.ar/planes?utm_source=google&utm_medium=cpc&utm_campaign=GOOG-SEM-L-ALL-ALL-PROS-BRAND-CABA&gclid=CjwKCAjwuYWSBhByEiwAKd_n_raFtACPO2ES7kxn5pQZYc2hGJ7GuCfTs2DrjkhM-ULHeFx0P7PEzhoC7PwQAvD_BwE" target="_BLANK"><img src="./Images/sw2.jpg" width="100" height="100" alt="Swiss Medical"></a>
+                    </div>
+                </div>
+            </aside>
             <!-- inicio footer -->
-            <footer id="Piedepagina">
-                <div class="footer">
+            <footer id="Piedepagina" class="row">
+                <div class="footer row">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
                     <img src="Images/logo.png"  width="100px" height="100" alt="Logo" data-aos="fade-up-right">
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
                     <p data-aos="fade-down"
                     data-aos-easing="linear"
                     data-aos-duration="1500">
@@ -112,17 +193,11 @@
                         | BACACAY 947 - CP 1405
                         CDAD. DE BS.AS. ARGENTINA
                     </p>
-                    <a href="./Pages/Contacto.html">¿Queres trabajar con nosotros? Hace Click aca</a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <a href="Pages/Contacto.html">¿Queres trabajar con nosotros? Hace Click aca</a>
+                    </div>
                 </div>
-                <aside><div class="footerFinal">
-                    <h3>Trabajamos con</h3>
-                    <a href="https://www.osde.com.ar/index.html#!homepage.html" target="_BLANK"><img src="./Images/OSDE.jpg" width="100" height="100" alt="Osde"></a>
-                    <a href="https://www.e-galenomovil.com.ar/CotizadorWeb/" target="_BLANK"><img src="./Images/galeno.png" width="100" height="100" alt="Galeno"></a>
-                    <a href="https://www.medife.com.ar/landing-quiero-asociarme?gclid=CjwKCAjwuYWSBhByEiwAKd_n_hf0Ho7wUshkabRj5cpYHctGdEKjhBSROXi-KO9DPJNmHGae7Pq7nRoCspQQAvD_BwE" target="_BLANK"><img src="./Images/Medife.png" width="100" height="100" alt="Medife"></a>
-                    <a href="https://www.accordsalud.com.ar/comercial/?gclid=CjwKCAjwuYWSBhByEiwAKd_n_ivwdPMltAnY2cFF9SFViv49GkQT3ThVn-gT7jHZUXdrGANeD6P7rBoCsH8QAvD_BwE" target="_BLANK"><img src="./Images/accord.png" width="100" height="100" alt="Accord salud"></a>
-                    <a href="https://www.sancorsalud.com.ar/" target="_BLANK"><img src="./Images/sancor.png" width="100" height="100" alt="Sancor Salud"></a>
-                    <a href="https://asociarme.swissmedical.com.ar/planes?utm_source=google&utm_medium=cpc&utm_campaign=GOOG-SEM-L-ALL-ALL-PROS-BRAND-CABA&gclid=CjwKCAjwuYWSBhByEiwAKd_n_raFtACPO2ES7kxn5pQZYc2hGJ7GuCfTs2DrjkhM-ULHeFx0P7PEzhoC7PwQAvD_BwE" target="_BLANK"><img src="./Images/sw2.jpg" width="100" height="100" alt="Swiss Medical"></a>
-                </aside>
                 <P>Desarrollado por Tomas Perrone</P>
             </footer>
         </div>

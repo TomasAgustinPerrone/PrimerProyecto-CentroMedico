@@ -44,7 +44,7 @@ section{
     }
 }
 /*360*/
-@media (max-width:360px) {
+/*@media (max-width:360px) {
     #contenedor{
         grid-template-areas: 
     "header"
@@ -146,7 +146,7 @@ section{
     -webkit-text-stroke: 1px rgb(0, 0, 0);
     border: solid #ffff 1rem;
     width: 100%;
-}
+} 
 .parallax2{
     background-attachment: fixed;
     background-position: 50%;
