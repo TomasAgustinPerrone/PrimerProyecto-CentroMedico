@@ -19,7 +19,6 @@ section{
 #contenedor{
     display: grid;
     grid-template-areas: 
-    "header"
     "section1"
     "aside"
     "section3"
@@ -32,10 +31,9 @@ section{
     align-items: center center; 
 }
 /*760*/
-@media (max-width:765px) {
+@media (max-width:760px) {
     #contenedor{
-        grid-template-areas: 
-    "header"
+        grid-template-areas:
     "section1"
     "aside"
     "section3"
@@ -46,103 +44,22 @@ section{
 /*360*/
 @media (max-width:360px) {
     #contenedor{
-        grid-template-areas: 
-    "header"
+        grid-template-areas:
     "section1"
     "section3"
     "aside"
     "footer"
     }
 }
-
 /* INICIO ENCABEZADO */
+header{
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%2352B4FB'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%234DA3DE'/%3E%3Cstop offset='1' stop-color='%23FEFFFD'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='9.569999999999999'%3E%3Cpath transform='translate(-196 -11.2) rotate(-22 1409 581) scale(0.7504)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='3.19' transform='translate(-322 172) rotate(1.6000000000000014 800 450) scale(0.9842)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(-5.200000000000003 -66) rotate(-34 401 736) scale(0.9842)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='2.9'%3E%3Cpath transform='translate(1032 31.2) rotate(-7.8 150 345) scale(1.0208000000000002)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='6.38' transform='translate(-138 -480) rotate(-100.80000000000001 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-472 104) rotate(-16.799999999999997 1400 132) scale(0.5)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
 #Encabezado{
-    /* background-color: #236d77; */
-    width: 100%;
-    top:0;
-    padding: 0rem;
-    grid-area: header;
-    /* background: rgba( 5, 5, 5, 0.4 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
-    background: rgba( 0, 0, 0, 0.35 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur( 7px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    position: sticky;
-}
-.InicioDeEncabezado{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: stretch;
-}
-.InicioDeEncabezado img{
-    height: 15rem;
-    width: 15rem;
-    margin-left: 5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-.datosYnav{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.datosYnav p{
-    font-weight:lighter;
-    text-decoration: overline;
-    color: #d0f1ea;
-    margin-top: 3rem;
-    margin-left: 10rem;
-    display: inline;
-}
-.datosYnav nav{
-    margin-right: 2rem;
-    margin-top: 8rem;
-    left: 2rem;
-    justify-content:space-evenly;
-}
-.datosYnav nav ul{
-    list-style: none;
-}
-.datosYnav nav ul li{
-    display: inline-block;
-    position: relative;
-}
-.datosYnav nav ul li a{
-    display: block;
-    padding:6px 2rem;
-    transition: all 0.2s linear;
-    color: #ffff;
-    text-decoration: none;
-    border-radius: 5px;
-    position: relative;
-    text-shadow: 3px 3px 3px rgba(127, 255, 212, 0.637);
-    font-size: 2.3rem;
-}
-.datosYnav nav ul ul {
-    position:absolute;
-    display: none;
-}
-.datosYnav nav ul ul li{
-    display: block;
-}
-.datosYnav nav ul li a:hover{
-    background-color: #5b9283;
-    color: rgb(6, 85, 72);
-    display: block;
-    text-shadow: 2px 2px 2px rgba(126, 253, 211, 0.788)
-}
-.datosYnav nav li:hover ul{
-    display: block;
+    grid-area: header;  
 }
 /* PARALLAX DE TODA LA PAGINA + IMAGENES */
 .parallax{
@@ -151,7 +68,6 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     height: 30rem;
-    max-width: 100%;
     color: white;
     font-size:x-large;
     font-weight: bold;
@@ -166,7 +82,6 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     height: 10rem;
-    max-width: 100%;
     color: white;
     font-size:x-large;
     font-weight: bold;
@@ -265,50 +180,6 @@ section{
     color:rgb(255, 255, 255);
     background-color: #236d77;
 }
-/* INDEX - CONTENIDO RELLENO*/
-/*#section2{
-    grid-area: section2;
-}
-.covid19Card{
-    background-repeat: no repeat;
-    background-size:cover;
-    border: solid #236d77;;
-    border-radius: 50px;
-    background-image: url(../Images/backgroundCOVID.jpg);
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    margin-left: 2rem;
-}
-.covid19Card p{
-    margin: 2rem 2rem 2rem 2rem;
-}
-.covid19Card img{
-    height: 40rem;
-    width: 60rem;
-    border: solid white;
-    margin-left: 19rem;
-    margin-top: 2rem;
-}
-.covid19Card h3{
-    margin: 2rem 2rem 2rem 2rem;
-}
-.covid19Card strong{
-    margin: 2rem 2rem 2rem 2rem;
-}
-.covid19Card button{
-    font-family: 'Oswald', sans-serif;
-    background-color: rgba(209, 223, 218, 0.637);
-    color: rgb(6, 85, 72);
-    border-radius: 10px;
-    width: 10rem;
-    margin-left: 35rem;
-    margin-bottom: 2rem;
-}
-.covid19Card button:hover{
-    color:rgb(255, 255, 255);
-    background-color: #236d77;
-}*/
 #aside{
     grid-area: aside;
     display: flex;
@@ -375,7 +246,6 @@ section{
 #contenedorServicios{
     display: grid;
     grid-template-areas: 
-    "header header"
     "especialidadesmed donarSangre"
     "estudiosyproced estudiosyproced"
     "footer footer"
@@ -392,7 +262,6 @@ section{
 @media (max-width:765px) {
     #contenedorServicios{
         grid-template-areas: 
-        "header"
         "especialidadesmed"
         "estudiosyproced"
         "donarSangre"
@@ -404,7 +273,6 @@ section{
 @media (max-width:360px) {
     #contenedorServicios{
         grid-template-areas: 
-        "header"
         "especialidadesmed"
         "estudiosyproced"
         "donarSangre"
@@ -522,7 +390,6 @@ section{
 #contenedorAtencionAlPaciente{
     display: grid;
     grid-template-areas: 
-    "header"
     "section1-Parallax-AtencionApacientes"
     "section2-PreguntasFrecuentes "
     "section3-Recetas"
@@ -534,7 +401,6 @@ section{
 @media (max-width:765px) {
     #contenedorAtencionAlPaciente{
         grid-template-areas: 
-        "header"
         "section1-Parallax-AtencionApacientes"
         "section2-PreguntasFrecuentes"
         "section3-Recetas"
@@ -546,7 +412,6 @@ section{
 @media (max-width:360px) {
     #contenedorAtencionAlPaciente{
         grid-template-areas: 
-        "header"
         "section1-Parallax-AtencionApacientes"
         "section2-PreguntasFrecuentes"
         "section3-Recetas"
@@ -674,43 +539,10 @@ section{
 .Recetas form legend{
     font-weight:bold;
 }
-/* ASIDE TELEMEDICINA
-#Aside-telemedicina{
-    grid-area: Aside-telemedicina;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(to top,#236d77,#37a8ac,white);
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    border-radius: 8rem;
-    border: solid rgb(6, 85, 72) 1px;
-    color: rgb(6, 85, 72) ;
-    }
-#Aside-telemedicina img{
-    height: 200px;
-    width: 240px;
-}
-#Aside-telemedicina p{
-    margin: 1rem
-}#Aside-telemedicina .progamacionDeTurnos{
-    background-color: rgb(163, 162, 162);
-    color: black;
-    font-size: 1.5rem;
-    border: solid black 2px;
-}
-#Aside-telemedicina h3{
-    color: #236d77;
-    text-shadow:4px 4px 4px rgba(32, 32, 32, 0.425);
-    margin-bottom: 20px;
-    font-size: 2rem;
-}*/
-
 /* TURNOS */
 #contenedorTurnos{
     display: grid;
     grid-template-areas: 
-    "header"
     "section1-turnos"
     "section2-turnos"
     "footer"
@@ -722,7 +554,6 @@ section{
     #contenedorContacto{
         display: grid;
         grid-template-areas: 
-        "header"
         "section1-turnos"
         "section2-turnos"
         "footer"
@@ -734,7 +565,6 @@ section{
     #contenedorContacto{
         display: grid;
         grid-template-areas: 
-        "header"
         "section1-turnos"
         "section2-turnos"
         "footer"
@@ -796,7 +626,6 @@ section{
 #contenedorContacto{
     display: grid;
     grid-template-areas: 
-    "header"
     "section1-Parallax-Contacto"
     "section2-Contacto"
     "footer"
@@ -808,7 +637,6 @@ section{
     #contenedorContacto{
         display: grid;
         grid-template-areas: 
-        "header"
         "section1-Parallax-Contacto"
         "section2-Contacto"
         "footer"
@@ -820,7 +648,6 @@ section{
     #contenedorContacto{
         display: grid;
         grid-template-areas: 
-        "header"
         "section1-Parallax-Contacto"
         "section2-Contacto"
         "footer"

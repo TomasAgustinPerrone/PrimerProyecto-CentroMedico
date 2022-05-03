@@ -13,35 +13,37 @@
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
-        <div id="contenedorAtencionAlPaciente">
-        <!-- inicio encabezado -->
         <header id="Encabezado">
-            <div class="InicioDeEncabezado">
-                <img data-aos="fade-up"
-                data-aos-duration="3000" src="../Images/logo.png" alt="Logo">
-                <div class="datosYnav">
-                    <p data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500"> Turnos + 54 11 153522 2048 (011) 4431 4358 
-                    | BACACAY 947 - CP 1405
-                    CDAD. DE BS.AS. ARGENTINA
-                    </p>
-                    <nav>
-                        <ul>
-                            <li><a href="../Index.html">HOME</a></li>
-                            <li><a href="Serviciosmedicos.html">SERVICIOS MEDICOS</a></li>
-                                <ul>
-                                    <li><a href="Serviciosmedicos.html#especialidadesmedicas">Especialidades Medicas</a></li>
-                                    <li><a href="Serviciosmedicos.html#estudiosyproced">Estudios y procedimientos</a></li>
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light nav-tabs">
+                    <div class="container navegador col-md-12 col-sm-12 col-lg-12 w-100">
+                        <a class="navbar-brand" href="../Index.html">
+                            <img data-aos="fade-up" data-aos-duration="3000" class="shadow-lg p-3 mb-5 bg-body rounded" src="../Images/logo.png" alt="logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item"><a class="nav-link" aria-current="page" href="../Index.html">HOME</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="Serviciosmedicos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            SERVICIOS MEDICOS
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li ><a class="dropdown-item" href="Serviciosmedicos.html#especialidadesmedicas">Especialidades Medicas</a></li>
+                                            <li><a class="dropdown-item" href="Serviciosmedicos.html#estudiosyproced">Estudios y procedimientos</a></li>
+                                        </ul>                                
+                                    <li class="nav-item"><a class="nav-link active" href="Atencionalpaciente.html">ATENCION AL PACIENTE</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="Turnos.html">TURNOS</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="Contacto.html">CONTACTO</a></li>
                                 </ul>
-                                <li><a href="Atencionalpaciente.html">ATENCION AL PACIENTE</a></li>
-                                <li><a href="Turnos.html">TURNOS</a></li>
-                                <li><a href="Contacto.html">CONTACTO</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>  
-            </header>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>  
+        <div id="contenedorAtencionAlPaciente">
         <!--inicio contenido-->
         <section id="section1-Parallax-AtencionApacientes">
         <div class="parallax imgAtencionApacientes"><h2>ATENCION AL PACIENTE</h2></div>
@@ -164,7 +166,7 @@
                 <h3>Trabajamos con</h3>
                 <a href="https://www.osde.com.ar/index.html#!homepage.html" target="_BLANK"><img src="../Images/OSDE.jpg" width="100" height="100" alt="Osde"></a>
                     <a href="https://www.e-galenomovil.com.ar/CotizadorWeb/" target="_BLANK"><img src="../Images/galeno.png" width="100" height="100" alt="Galeno"></a>
-                    <a href="https://www.medife.com.ar/landing-quiero-asociarme?gclid=CjwKCAjwuYWSBhByEiwAKd_n_hf0Ho7wUshkabRj5cpYHctGdEKjhBSROXi-KO9DPJNmHGae7Pq7nRoCspQQAvD_BwE" target="_BLANK"><img src="../Images/galeno.png" width="100" height="100" alt="Medife"></a>
+                    <a href="https://www.medife.com.ar/landing-quiero-asociarme?gclid=CjwKCAjwuYWSBhByEiwAKd_n_hf0Ho7wUshkabRj5cpYHctGdEKjhBSROXi-KO9DPJNmHGae7Pq7nRoCspQQAvD_BwE" target="_BLANK"><img src="../images/Medife.png" width="100" height="100" alt="Medife"></a>
                     <a href="https://www.accordsalud.com.ar/comercial/?gclid=CjwKCAjwuYWSBhByEiwAKd_n_ivwdPMltAnY2cFF9SFViv49GkQT3ThVn-gT7jHZUXdrGANeD6P7rBoCsH8QAvD_BwE" target="_BLANK"><img src="../Images/accord.png" width="100" height="100" alt="Accord salud"></a>
                     <a href="https://www.sancorsalud.com.ar/" target="_BLANK"><img src="../Images/sancor.png" width="100" height="100" alt="Sancor Salud"></a>
                     <a href="https://asociarme.swissmedical.com.ar/planes?utm_source=google&utm_medium=cpc&utm_campaign=GOOG-SEM-L-ALL-ALL-PROS-BRAND-CABA&gclid=CjwKCAjwuYWSBhByEiwAKd_n_raFtACPO2ES7kxn5pQZYc2hGJ7GuCfTs2DrjkhM-ULHeFx0P7PEzhoC7PwQAvD_BwE" target="_BLANK"><img src="../Images/sw2.jpg" width="100" height="100" alt="Swiss Medical"></a>
