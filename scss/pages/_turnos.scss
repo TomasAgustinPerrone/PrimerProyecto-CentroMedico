@@ -1,0 +1,103 @@
+/* TURNOS */
+#contenedorTurnos{
+    display: grid;
+    grid-template-areas: 
+    "section1-turnos"
+    "section2-turnos"
+    "footer"
+    ;
+    grid-row-gap: 2rem;
+} 
+/*760*/
+@media (max-width:765px) {
+    #contenedorContacto{
+        display: grid;
+        grid-template-areas: 
+        "section1-turnos"
+        "section2-turnos"
+        "footer"
+        ;
+    }
+}
+/*360*/
+@media (max-width:360px) {
+    #contenedorContacto{
+        display: grid;
+        grid-template-areas: 
+        "section1-turnos"
+        "section2-turnos"
+        "footer"
+        ;
+    }
+}
+#section1-turnos{
+    grid-area: section1-turnos;
+}
+#section2-turnos{
+    grid-area: section2-turnos;
+}
+.parallax{
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    color: white;
+    font-size:x-large;
+    font-weight: bold;
+    text-align: center center;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    border: solid #ffff 1rem;
+    width: 100%;
+    h2{
+        font-size: 4rem;
+    }
+}
+.imgTurnos{
+    background-image: url();
+}
+.turnos {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: rgb(6, 85, 72);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 120rem;
+        form{
+        background-color: transparent;
+        color: rgb(6, 85, 72);
+        height: 40rem;
+        width: 30rem;
+            input{
+            background-color: rgba(127, 255, 212, 0.637);
+        }
+        select{
+            background-color: rgba(127, 255, 212, 0.637);
+            font-family: 'Oswald', sans-serif;
+        }
+        .botonEnviar{
+            font-family: 'Oswald', sans-serif;
+            background-color: rgba(127, 255, 212, 0.637);
+            color: rgb(6, 85, 72);
+            width: 10rem;
+            margin-top: 2rem;
+            &:hover{
+                color:rgb(6, 85, 72);
+                background-color: #84d9c3;
+            }
+        }
+        .botonLimpiar{
+            font-family: 'Oswald', sans-serif;
+            background-color: rgba(127, 255, 212, 0.637);
+            color: rgb(6, 85, 72);
+            width: 10rem;
+            margin-top: 2rem;
+            &:hover{
+                color:rgb(6, 85, 72);
+                background-color: #84d9c3;
+            }
+        }
+    }
+}
