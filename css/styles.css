@@ -720,7 +720,6 @@ header{
 
 /* FOOTER */
 #Piedepagina{
-    /*background-color: rgb(6, 85, 72);*/
     top: 5rem;
     width: 100%;
     grid-area: footer;
@@ -747,7 +746,6 @@ header{
 .footer a{
     text-decoration: none;
     color: #84d9c3;
-/*    margin: 30px 50px 0px 50px;*/
 }
 .footer a:hover {
     color: #d0f1ea;
