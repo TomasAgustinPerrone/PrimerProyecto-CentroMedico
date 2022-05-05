@@ -42,6 +42,28 @@
     grid-row-gap: 2rem;
 }
 
+/* PARALLAX */
+.parallax{
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    color: white;
+    font-size:x-large;
+    font-weight: bold;
+    text-align: center center;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    border: solid #ffff 1rem;
+    width: 100%;
+    h2{
+        font-size: 4rem;
+    }
+}
+.imgContacto{
+    background-image: url(../Images/contactos.jpg);
+    background-size:cover;
+}
 .contacto{
     display: flex;
     flex-direction: column;

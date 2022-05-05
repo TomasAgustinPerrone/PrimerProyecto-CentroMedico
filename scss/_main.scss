@@ -8,11 +8,11 @@ html{
     height: 100%;
 }
 body{
-    font-family: 'Oswald', sans-serif;
+    font-family: $font-html;
     font-size: 1.5rem;
-    background-color: #d0f1ea;
+    background-color: $backgroundcolor-html;
     min-height: 100%;
 }
 section{
-    width: 100%;
+    width: 100%; 
 }

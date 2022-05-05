@@ -7,7 +7,7 @@
     "footer"
     ;
     grid-row-gap: 2rem;
-}
+} 
 /*760*/
 @media (max-width:765px) {
     #contenedorContacto{
@@ -36,8 +36,26 @@
 #section2-turnos{
     grid-area: section2-turnos;
 }
-
-
+.parallax{
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    color: white;
+    font-size:x-large;
+    font-weight: bold;
+    text-align: center center;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    border: solid #ffff 1rem;
+    width: 100%;
+    h2{
+        font-size: 4rem;
+    }
+}
+.imgTurnos{
+    background-image: url();
+}
 .turnos {
     display: flex;
     flex-direction: column;
