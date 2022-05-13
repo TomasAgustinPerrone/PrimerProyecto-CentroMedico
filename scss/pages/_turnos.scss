@@ -37,24 +37,10 @@
     grid-area: section2-turnos;
 }
 .parallax{
-    background-attachment: fixed;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 30rem;
-    color: white;
-    font-size:x-large;
-    font-weight: bold;
-    text-align: center center;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-    border: solid #ffff 1rem;
-    width: 100%;
-    h2{
-        font-size: 4rem;
-    }
+    @extend .parallaxcaract;
 }
 .imgTurnos{
-    background-image: url();
+    background-image: url(../images/turnos-2.jpg);
 }
 .turnos {
     display: flex;
@@ -79,8 +65,8 @@
         }
         .botonEnviar{
             font-family: 'Oswald', sans-serif;
-            background-color: rgba(127, 255, 212, 0.637);
-            color: rgb(6, 85, 72);
+            background-color: map-get($map: $estiloboton, $key:fondo);
+            color: map-get($map: $estiloboton, $key:color);
             width: 10rem;
             margin-top: 2rem;
             &:hover{
@@ -90,8 +76,8 @@
         }
         .botonLimpiar{
             font-family: 'Oswald', sans-serif;
-            background-color: rgba(127, 255, 212, 0.637);
-            color: rgb(6, 85, 72);
+            background-color: map-get($map: $estiloboton, $key:fondo);
+            color: map-get($map: $estiloboton, $key:color);
             width: 10rem;
             margin-top: 2rem;
             &:hover{

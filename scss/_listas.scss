@@ -1,0 +1,10 @@
+$colorestextofooter:("textop":rgba(127, 255, 212, 0.637), "textoh3":black);
+@each $name, $color in $colorestextofooter{
+    .textofooter-#{$name}{
+        color: $color;
+    }
+}
+
+
+
+

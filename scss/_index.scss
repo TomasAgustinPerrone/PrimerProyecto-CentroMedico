@@ -34,24 +34,14 @@
     }
 }
 .parallax2{
-    background-attachment: fixed;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 10rem;
-    color: white;
-    font-size:x-large;
-    font-weight: bold;
-    text-align: center center;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-    border: solid #ffff 1rem;
+    @extend .parallaxcaract2;
 }
 
 .imgQuienesSomos{
-    background-image: url();
+    background-image: url(../images/centro-integral2.jpg);
 }
 .imgComoLlegar{
-    background-image:url();
+    background-image:url(../images/como_llegar_1.jpg);
 }
 
 /* HOME - QUIENES SOMOS */

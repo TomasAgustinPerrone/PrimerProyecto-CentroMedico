@@ -1,33 +1,6 @@
 /* SERVICIOS MEDICOS */ 
 .parallax{
-    background-attachment: fixed;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 30rem;
-    color: white;
-    font-size:x-large;
-    font-weight: bold;
-    text-align: center center;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-    border: solid #ffff 1rem;
-    width: 100%;
-    h2{
-        font-size: 4rem;
-    }
-}
-.parallax2{
-    background-attachment: fixed;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 10rem;
-    color: white;
-    font-size:x-large;
-    font-weight: bold;
-    text-align: center center;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-    border: solid #ffff 1rem;
+    @extend .parallaxcaract;
 }
 .imgServiciosmedicos{
     background-image: url(../Images/Cuáles-son-las-especialidades-médicas-más-complicadas.jpg);
@@ -148,6 +121,16 @@
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
+}
+@import "scss/mixin"; 
+.estudio1{
+    @include estudios (estudio1)
+}
+.estudio2{
+    @include estudios (estudio2)
+}
+.estudio3{
+    @include estudios (estudio3)
 }
 
 #donarSangre{
