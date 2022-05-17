@@ -213,7 +213,7 @@ header {
 
 /* PARALLAX */
 .imgContacto {
-  background-image: url(../Images/contactos.jpg);
+  background-image: url(../images/contactos.jpg);
   background-size: cover; }
 
 .contacto {
@@ -408,7 +408,7 @@ header {
 
 /* SERVICIOS MEDICOS */
 .imgServiciosmedicos {
-  background-image: url(../Images/Cuáles-son-las-especialidades-médicas-más-complicadas.jpg); }
+  background-image: url(../images/Cuáles-son-las-especialidades-médicas-más-complicadas.jpg); }
 
 #contenedorServicios {
   display: grid;
