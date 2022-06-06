@@ -1,5 +1,5 @@
 # Centro Integral Caballito
-<img src="Images/logo.png">
+<img src="images/logomini.png">
 
 Mi primer proyecto de desarrollo Web de la mano de CODERHOUSE.
 

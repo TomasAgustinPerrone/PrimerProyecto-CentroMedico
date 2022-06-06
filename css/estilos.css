@@ -1,13 +1,72 @@
 @charset "UTF-8";
 /* MAP GET*/
-header {
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%2352B4FB'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%234DA3DE'/%3E%3Cstop offset='1' stop-color='%23FEFFFD'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='9.569999999999999'%3E%3Cpath transform='translate(-196 -11.2) rotate(-22 1409 581) scale(0.7504)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='3.19' transform='translate(-322 172) rotate(1.6000000000000014 800 450) scale(0.9842)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(-5.200000000000003 -66) rotate(-34 401 736) scale(0.9842)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='2.9'%3E%3Cpath transform='translate(1032 31.2) rotate(-7.8 150 345) scale(1.0208000000000002)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='6.38' transform='translate(-138 -480) rotate(-100.80000000000001 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-472 104) rotate(-16.799999999999997 1400 132) scale(0.5)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover; }
+.logo {
+  margin-right: 8rem;
+  transition: transform 0.2s; }
+  .logo:hover {
+    transform: scaleY(1.01);
+    transform: scaleX(1.01); }
 
-#Encabezado {
-  grid-area: header; }
+.navbar {
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.555);
+  font-size: 1.5rem;
+  height: auto; }
+
+.header {
+  background-color: #ffffff;
+  font-size: 1rem; }
+
+.redes {
+  color: #575353;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none; }
+  .redes .facebook {
+    color: #575353;
+    text-decoration: none; }
+    .redes .facebook:hover {
+      color: #4196b8; }
+  .redes .linkedin {
+    color: #575353;
+    text-decoration: none; }
+    .redes .linkedin:hover {
+      color: #4196b8; }
+  .redes .instagram {
+    color: #575353;
+    text-decoration: none; }
+    .redes .instagram:hover {
+      color: #4196b8; }
+  .redes .whatsapp {
+    color: #575353;
+    text-decoration: none; }
+    .redes .whatsapp:hover {
+      color: #4196b8; }
+  .redes .ubi {
+    color: #575353;
+    text-decoration: none; }
+    .redes .ubi:hover {
+      color: #4196b8; }
+
+@media (max-width: 540px) {
+  .redes {
+    font-size: 1rem; }
+    .redes h4 {
+      font-size: 1rem; }
+  .logo {
+    margin-right: 7rem;
+    width: 180px;
+    height: 90px; } }
+
+@media (max-width: 440px) {
+  .redes {
+    display: none; }
+  .logo {
+    margin-right: 0%; } }
 
 /* FOOTER */
 #Piedepagina {
@@ -16,7 +75,11 @@ header {
   grid-area: footer;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to top, #236d77, #236d77, #236d77, #236d77, #236d77, #236d77, #d0f1ea); }
+  background: rgba(8, 8, 8, 0.514);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18); }
 
 .footer {
   display: flex;
@@ -25,43 +88,62 @@ header {
   align-items: center;
   justify-content: space-evenly;
   font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
-  .footer img {
-    width: 150px;
-    height: 150px;
-    border: outset white 2px; }
+  margin-top: 2rem; }
   .footer a {
     text-decoration: none;
-    color: #84d9c3; }
+    color: #84d9c3;
+    font-size: 1.3rem; }
     .footer a:hover {
       color: #d0f1ea;
       font-weight: 400;
       text-shadow: 3px 3px rgba(9, 10, 10, 0.637); }
-  .footer p {
-    font-size: 80%;
-    font-weight: normal;
-    text-decoration: overline;
-    font-size: 15px;
-    text-align: end; }
 
-.footerFinal {
-  width: 100%;
+.lista {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center; }
-  .footerFinal h3 {
-    font-weight: bold;
-    font-size: 90%;
-    margin-left: 2rem;
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.637); }
-  .footerFinal a {
-    transition: transform 2s; }
-    .footerFinal a:hover {
-      transform: scaleX(1.2);
-      transform: scaleY(1.2); }
+  flex-direction: row; }
+  .lista h2 {
+    font-size: 1.5rem; }
 
+/*768*/
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column; }
+    .footer .lista {
+      display: flex;
+      flex-direction: column; } }
+
+.lista {
+  display: flex;
+  flex-direction: row; }
+
+.tapdesign {
+  text-align: center;
+  border-top: black;
+  background-color: #464444;
+  color: #84d9c3;
+  font-size: 1.2rem; }
+
+/*.footerFinal{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    h3{
+        font-weight: bold;
+        font-size: 90%;
+        margin-left: 2rem;
+        text-shadow: 1px 1px rgba(255, 255, 255, 0.637);
+    }
+    a{
+        transition: transform 2s;
+        &:hover{
+            transform:scaleX(1.2);
+            transform:scaleY(1.2)
+        }
+    }
+} */
 /* ATENCION AL PACIENTE */
 #contenedorAtencionAlPaciente {
   display: grid;
@@ -89,34 +171,6 @@ header {
 
 .imgAtencionApacientes {
   background-image: url(../images/atencion-a-pacientes.jpg); }
-
-/* PREGUNTAS FRECUENTES */
-.preguntasFrecuentes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  color: #065548;
-  background-image: url(../Images/preguntas-mas-frecuentes.png);
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-position: 50%;
-  background-color: white;
-  border-radius: 8rem; }
-  .preguntasFrecuentes ul {
-    list-style: none;
-    border-radius: 5px;
-    margin-left: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
-  .preguntasFrecuentes a {
-    text-decoration: none;
-    font-style: italic;
-    color: #065548; }
-  .preguntasFrecuentes h2 {
-    margin-left: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
 
 /* RECETAS */
 .inicioRecetas {
@@ -186,360 +240,177 @@ header {
     .Recetas form .botonLimpiar legend {
       font-weight: bold; }
 
-/*CONTACTO*/
-#contenedorContacto {
-  display: grid;
-  grid-template-areas: "section1-Parallax-Contacto" "section2-Contacto" "footer";
-  grid-row-gap: 2rem; }
-
-/*760*/
-@media (max-width: 765px) {
-  #contenedorContacto {
-    display: grid;
-    grid-template-areas: "section1-Parallax-Contacto" "section2-Contacto" "footer"; } }
-
-/*360*/
-@media (max-width: 360px) {
-  #contenedorContacto {
-    display: grid;
-    grid-template-areas: "section1-Parallax-Contacto" "section2-Contacto" "footer"; } }
-
-#section1-Parallax-Contacto {
-  grid-area: section1-Parallax-Contacto; }
-
-#section2-Contacto {
-  grid-area: section2-Contacto;
-  grid-row-gap: 2rem; }
-
-/* PARALLAX */
-.imgContacto {
-  background-image: url(../images/contactos.jpg);
-  background-size: cover; }
-
-.contacto {
+.preguntasFrecuentes {
+  background-image: url(../images/atencion-a-pacientes.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-content: center;
   align-items: center;
-  background-color: white;
-  border-radius: 10rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
-  .contacto h2 {
+  text-align: center; }
+  .preguntasFrecuentes .preguntasFrecuentes-dropdown {
+    color: #236d77;
+    margin: 15px;
+    padding: 10px; }
+    .preguntasFrecuentes .preguntasFrecuentes-dropdown h1 {
+      color: black; }
+    .preguntasFrecuentes .preguntasFrecuentes-dropdown button {
+      font-size: large;
+      border-radius: 20px; }
+
+.atencionDomiciliaria {
+  background-image: url(../images/domicilio.jpg);
+  background-position: top;
+  background-repeat: none;
+  background-size: cover;
+  overflow: hidden;
+  height: 35rem;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .atencionDomiciliaria .atencionDomiciliariaLink {
+    background: rgba(27, 27, 27, 0.425);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px; }
+    .atencionDomiciliaria .atencionDomiciliariaLink button {
+      font-size: large;
+      border-radius: 20px; }
+
+.contenidoReceta {
+  background-color: #fff;
+  padding: 70px; }
+  .contenidoReceta h1 {
+    color: #1ABB9A; }
+  .contenidoReceta .recetaDropdown button {
+    font-size: large;
+    border-radius: 20px; }
+
+/*CONTACTO*/
+.contacto {
+  background-image: url(../images/trabajaconnosotros.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: #FFFF; }
+  .contacto .medio {
+    background: rgba(27, 27, 27, 0.61);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 5px; }
+
+.infoEnCarousel {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.459));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .infoEnCarousel h5 {
+    font-size: 3rem; }
+  .infoEnCarousel p {
     font-size: 2rem; }
-  .contacto form {
-    background-color: transparent;
-    height: 68rem;
-    width: 60rem;
-    color: #065548;
-    font-size: 1.4rem; }
-    .contacto form textarea {
-      background-color: transparent;
-      width: 48rem;
-      margin-left: 7px; }
-    .contacto form input {
-      background-color: rgba(127, 255, 212, 0.637); }
-    .contacto form select {
-      background-color: rgba(127, 255, 212, 0.637);
-      font-family: 'Oswald', sans-serif; }
-    .contacto form .botonEnviar {
-      font-family: 'Oswald', sans-serif;
-      background-color: rgba(127, 255, 212, 0.637);
-      color: #065548;
-      width: 10rem;
-      margin-bottom: 5px;
-      margin-left: 15rem; }
-      .contacto form .botonEnviar:hover {
-        color: #065548;
-        background-color: #84d9c3; }
-    .contacto form .botonLimpiar {
-      font-family: 'Oswald', sans-serif;
-      background-color: rgba(127, 255, 212, 0.637);
-      color: #065548;
-      width: 10rem;
-      margin-bottom: 5px; }
-      .contacto form .botonLimpiar:hover {
-        color: #065548;
-        background-color: #84d9c3; }
+  .infoEnCarousel button {
+    font-size: large;
+    border-radius: 20px; }
 
-#contenedor {
-  display: grid;
-  grid-template-areas: "section1" "aside" "section3" "footer";
-  grid-row-gap: 2rem;
-  height: 100vh;
-  width: 100%;
-  justify-items: center;
-  align-items: center center; }
-
-/*760*/
-@media (max-width: 760px) {
-  #contenedor {
-    grid-template-areas: "section1" "aside" "section3" "footer"; } }
-
-/*360*/
-@media (max-width: 360px) {
-  #contenedor {
-    grid-template-areas: "section1" "section3" "aside" "footer"; } }
-
-.imgQuienesSomos {
-  background-image: url(../images/centro-integral2.jpg); }
-
-.imgComoLlegar {
-  background-image: url(../images/como_llegar_1.jpg); }
-
-/* HOME - QUIENES SOMOS */
-#section1 {
-  grid-area: section1; }
+@media (max-width: 440px) {
+  .carousel-item {
+    height: 300px; } }
 
 .quienesSomos {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  align-items: center; }
-  .quienesSomos p {
-    color: #065548;
-    text-align: justify;
-    background-color: #d0f1ea;
-    margin: 10px 100px 10px 10px;
+  background-image: url(../images/quienesSomos.jpg);
+  background-position: top;
+  background-repeat: none;
+  background-size: auto;
+  overflow: hidden; }
+  .quienesSomos .nosotros {
     font-size: 1.2rem; }
-
-.quienesSomos__horarios {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  background-image: url();
-  background-size: cover;
-  border: solid 5px white;
-  border-radius: 5px;
-  margin: 20px 70px 20px 50px;
-  left: 3rem;
-  right: 5rem;
-  padding: 30px 30px 30px 30px; }
-  .quienesSomos__horarios h3 {
-    color: #065548;
-    text-shadow: 4px 4px 4px #fdfdfd;
-    margin-bottom: 20px;
-    text-align: center; }
-  .quienesSomos__horarios img {
-    height: 4rem;
-    width: 4rem;
-    right: 10px;
-    background-color: white;
-    border-radius: 100%;
-    display: inline-block;
-    margin-left: 10rem; }
-  .quienesSomos__horarios table {
-    border-color: #5b9283;
-    color: #236d77;
-    justify-content: center; }
-    .quienesSomos__horarios table td {
-      font-weight: bold;
-      padding: 10px 10px 10px 10px; }
-  .quienesSomos__horarios button {
-    font-family: 'Oswald', sans-serif;
-    background-color: rgba(209, 223, 218, 0.637);
-    color: #065548;
-    border-radius: 10px;
-    width: 10rem;
-    margin-bottom: 5px;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    align-items: center; }
-    .quienesSomos__horarios button:hover {
+  .quienesSomos .mision-vision-valores {
+    font-size: 1.2rem; }
+    .quienesSomos .mision-vision-valores h2 {
       color: white;
-      background-color: #236d77; }
+      text-shadow: 3px 3px rgba(12, 12, 12, 0.603); }
+    .quienesSomos .mision-vision-valores .cuadro {
+      background-color: rgba(3, 3, 3, 0.589);
+      color: #ffff; }
 
-/* ASIDE */
-#aside {
-  grid-area: aside;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(285,683,308)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%234FE'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='526' height='438.3' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.28'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover; }
-  #aside iframe {
-    height: 25rem;
-    width: 45rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem; }
+#comoLlegar {
+  background: rgba(255, 255, 255, 0.466);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.555); }
 
-/* INDEX - COMO LLEGAR */
-#section3 {
-  grid-area: section3; }
-
-.comoLlegar {
+.mapa {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; }
-  .comoLlegar iframe {
-    border-radius: 5px;
-    height: 500px;
-    width: 50%; }
+  height: 30rem; }
 
-.comoLlegar--ubicacion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  width: 50%;
-  color: #065548;
-  background-color: white;
-  background-image: url(../Images/pin-de-ubicacion.png);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  border: solid 5px white;
-  font-size: 2.5rem; }
-  .comoLlegar--ubicacion ul {
-    list-style: none;
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem; }
-  .comoLlegar--ubicacion p {
-    font-weight: bold;
-    text-shadow: 4px 4px 4px gray; }
+.detalle-mapa {
+  background-color: #175f6f;
+  color: #ffff; }
+  .detalle-mapa i {
+    color: white;
+    text-shadow: 3px 3px rgba(9, 10, 10, 0.315);
+    font-weight: bold; }
 
-/* SERVICIOS MEDICOS */
-.imgServiciosmedicos {
-  background-image: url(../images/Cuáles-son-las-especialidades-médicas-más-complicadas.jpg); }
+.institucion {
+  background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.082)), url(../images/fondoestetoscopio.jpg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat; }
 
-#contenedorServicios {
-  display: grid;
-  grid-template-areas: "especialidadesmed donarSangre" "estudiosyproced estudiosyproced" "footer footer";
-  grid-template-columns: auto 400px;
-  grid-row-gap: 2rem;
-  grid-column-gap: 1rem;
-  height: 100vh;
-  justify-items: center;
-  align-items: center center;
-  font-family: 'Oswald', sans-serif; }
-
-/*760*/
-@media (max-width: 765px) {
-  #contenedorServicios {
-    grid-template-areas: "especialidadesmed" "estudiosyproced" "donarSangre" "footer"; } }
-
-/*360*/
-@media (max-width: 360px) {
-  #contenedorServicios {
-    grid-template-areas: "especialidadesmed" "estudiosyproced" "donarSangre" "footer"; } }
-
-/* ESPECIALIDADES MED */
-#especialidadesmed {
-  grid-area: especialidadesmed; }
-
-.especialidadesCard {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  color: #065548; }
-
-.Cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center center; }
-
-.drArgenteCard {
-  width: 35rem;
-  border: solid #065548;
-  border-radius: 5rem;
-  overflow: hidden;
-  padding: 10px;
-  text-align: center;
-  background-color: #ffff;
-  margin: left 2rem;
-  margin-right: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  color: #065548;
-  font-size: 1.2rem;
-  background-image: url(../Images/hueso.png);
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 50%; }
-  .drArgenteCard:hover {
-    transform: translate(10px, -10px);
-    box-shadow: 10px 10px 10px #065548; }
-  .drArgenteCard img {
-    border-radius: 80px; }
-  .drArgenteCard ul li {
-    text-align: justify;
-    list-style: none; }
-
-.profesionalesMedicos table {
-  background-color: #ffff;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border: solid #5b9283;
-  text-align: center;
-  transition: transform 2s; }
-  .profesionalesMedicos table:hover {
-    transform: scaleY(1.1);
-    transform: scaleX(1.1);
-    box-shadow: 10px 10px 10px #065548; }
-
-/* ESTUDIOS Y PROCEDIMIENTOS */
-#estudiosyproced {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  color: #065548;
-  background-color: #84d9c3;
-  grid-area: estudiosyproced;
-  border-radius: 5rem; }
-  #estudiosyproced p {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
-
-.estudio1 {
-  background-color: aqua;
-  color: blue; }
-
-.estudio2 {
-  background-color: beige;
-  color: violet; }
-
-.estudio3 {
-  background-color: greenyellow;
-  color: white; }
-
-#donarSangre {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(285,683,308)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%234FE'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='526' height='438.3' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.28'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-  grid-area: donarSangre; }
-  #donarSangre img {
-    height: 60rem;
-    width: 40rem; }
-  #donarSangre iframe {
-    height: 60rem;
-    width: 40rem; }
-  #donarSangre h3 {
+.nosotrosSm {
+  background-color: #04705c9f;
+  color: #ffff; }
+  .nosotrosSm h3 {
     color: #236d77;
-    text-shadow: 4px 4px 4px #fdfdfd;
-    margin-top: 1rem;
-    text-align: center center;
-    border-radius: 5rem;
-    background-color: white;
-    padding: 3rem; }
+    text-decoration: overline; }
+  .nosotrosSm .descripcionArgente {
+    color: gray;
+    font-size: 1.5rem; }
+
+.argente img {
+  width: 100%;
+  height: 100%; }
+
+@media (max-width: 440px) {
+  .descripcionArgente {
+    font-size: 1rem; } }
+
+#especialidadesMedicas {
+  background-color: #ffff; }
+
+.sumate {
+  background-image: url(../images/sumate.jpg);
+  background-position: top;
+  background-repeat: none;
+  background-size: cover;
+  overflow: hidden;
+  height: 35rem;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .sumate .sumatelink {
+    background: rgba(27, 27, 27, 0.466);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px; }
+    .sumate .sumatelink button {
+      font-size: large;
+      border-radius: 20px; }
 
 /* TURNOS */
 #contenedorTurnos {
@@ -606,6 +477,18 @@ header {
         color: #065548;
         background-color: #84d9c3; }
 
+.turno {
+  background-image: url(../images/turnos-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: #FFFF; }
+  .turno .medios {
+    background: rgba(27, 27, 27, 0.61);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 5px; }
+
 * {
   margin: 0%;
   padding: 0%;
@@ -619,17 +502,17 @@ html {
 body {
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
-  background-color: #d0f1ea;
-  min-height: 100%; }
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(214,683,308)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%234FE'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='300' height='250' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.24'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; }
 
 section {
   width: 100%; }
 
-.textofooter-textop {
-  color: rgba(127, 255, 212, 0.637); }
-
-.textofooter-textoh3 {
-  color: black; }
+ul {
+  list-style-type: none;
+  text-decoration: none; }
 
 .parallaxcaract, .parallax {
   background-attachment: fixed;
@@ -647,7 +530,7 @@ section {
   .parallaxcaract h2, .parallax h2 {
     font-size: 4rem; }
 
-.parallaxcaract2, .parallax2 {
+.parallaxcaract2 {
   background-attachment: fixed;
   background-position: 50%;
   background-repeat: no-repeat;

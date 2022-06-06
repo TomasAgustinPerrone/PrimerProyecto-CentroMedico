@@ -48,37 +48,6 @@
 .imgAtencionApacientes{
     background-image: url(../images/atencion-a-pacientes.jpg);
 }
-/* PREGUNTAS FRECUENTES */
-.preguntasFrecuentes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: $colortextos;
-    background-image: url(../Images/preguntas-mas-frecuentes.png);
-    background-repeat:no-repeat ;
-    background-size: 20%;
-    background-position: 50%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 8rem;
-    ul{
-        list-style: none;
-        border-radius: 5px;
-        margin-left: 3rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-    a{
-        text-decoration: none;
-        font-style: italic;
-        color: $colortextos;
-    }
-    h2{
-        margin-left: 3rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-}
 /* RECETAS */
 .inicioRecetas{
     display: flex;
@@ -154,6 +123,69 @@
         }
         legend{
             font-weight:bold;
+        }
+    }
+}
+.preguntasFrecuentes{
+    background-image: url(../images/atencion-a-pacientes.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .preguntasFrecuentes-dropdown{
+        color:#236d77;
+        margin: 15px;
+        padding: 10px;
+        h1{
+            color: black;
+        }
+        button{
+            font-size: large;
+            border-radius: 20px;
+        }
+    }
+}
+.atencionDomiciliaria{
+    background-image: url(../images/domicilio.jpg);
+    background-position:top;
+    background-repeat: none;
+    background-size: cover;
+    overflow: hidden;
+    height: 35rem;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .atencionDomiciliariaLink{
+        background: rgba(27, 27, 27, 0.425);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border-radius: 5px;
+        margin: 15px;
+        padding: 10px;
+        button{
+            font-size: large;
+            border-radius: 20px;
+        }
+    };
+}
+.contenidoReceta {
+    background-color: #fff;
+    padding: 70px;
+    h1{
+        color:#1ABB9A;
+    }
+    .recetaDropdown{
+        button{
+            font-size: large;
+            border-radius: 20px;
         }
     }
 }

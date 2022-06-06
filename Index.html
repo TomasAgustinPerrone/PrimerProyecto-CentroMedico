@@ -6,119 +6,299 @@
         <meta name=”keywords” content=”Salud,Medicina,Asistencia,Profesionalismo,Compromiso,Respeto,Calidad,Responsabilidad”>
         <meta name="description" content="El Centro Integral Caballito es una institución de salud con una amplia variedad de especialidades médicas que brinda servicios de alta calidad profesional y humana, en un ámbito de respeto y responsabilidad. Centro asistencial privado, donde la salud es nuestro mayor compromiso.">
         <title>CentroIntegralCaballito</title>
-        <link rel="shortcut icon" href="./images/logo.png">
+        <link rel="shortcut icon" href="./images/logomini.png">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/estilos.css">
     </head>
     <body>
-        <!--inicio header ---> 
-        <header id="Encabezado">
-            <div class="row">
-                <nav class="navbar navbar-expand-lg navbar-light nav-tabs">
-                    <div class="container navegador col-md-12 col-sm-12 col-lg-12 w-100">
-                        <a class="navbar-brand " href="index.html">
-                            <img class="shadow-lg p-3 mb-5 bg-body rounded" src="images/logo.png" alt="logo">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+        <!--HEADER ---> 
+        <header id="header" class="header container-fluid d-flex flex-row d-flex justify-content-around align-items-center">
+            <div class="redes border-end pe-5">
+                <h4>Central de turnos:</h4>
+                <i class="bi bi-telephone"> 011 4431-4358</i>
+                <a class="whatsapp" href="https://web.whatsapp.com/" target="_BLANK"><i class="bi bi-whatsapp"></i>+ 54 11 153522 2048</a>
+                <a class="ubi" href="index.html#comoLlegar"><i class="bi bi-geo-alt "></i>BACACAY 947, CABA</a>
+            </div>
+            <a class="navbar-brand p-3" href="index.html">
+                <img class="logo shadow-lg p-1 mb-2 bg-body rounded" src="./images/LOGO2.png" alt="LOGO" width="230px" height="120px">
+            </a>
+            <div class="redes">
+                <a class="m-2 facebook" href="https://www.facebook.com/" target="_BLANK"><i class="bi bi-facebook "></i></a>
+                <a class="m-2 linkedin" href="https://ar.linkedin.com/" target="_BLANK"><i class="bi bi-linkedin  "></i></a>
+                <a class="m-2 instagram" href="https://www.instagram.com/"target="_BLANK"><i class="bi bi-instagram "></i></a>
+            </div>
+        </header>
+        <!--NAV ---> 
+        <nav  class="navbar navbar-expand-sm navbar-light sticky-top"  id="menu">
+            <div class="container-fluid d-flex flex-column">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-5 p-2" id="navbarSupportedContent">
+                    <ul class="nav nav-tabs navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/Serviciosmedicos.html">SERVICIOS MEDICOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/Atencionalpaciente.html">ATENCION AL PACIENTE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/Turnos.html">TURNOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/Contacto.html">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--CARROUSEL DE IMAGENES---> 
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide container-fluid" data-bs-ride="false">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/turnosrapidos2.jpg" class="d-block w-100" alt="Turnos"height="480px">
+                                <div data-aos="fade-up" class=" infoEnCarousel carousel-caption d-none d-md-block">
+                                    <a href="./pages/Turnos.html"><button class="btn btn-outline-info">Saca tu turno ahora</button></a>
+                                    <h5>TUS TURNOS, MUCHO MAS FACILES</h5>
+                                    <p>Ahora podes solicitar tu turno sin necesidad de moverte de tu casa - mayor comodidad y rapidez.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/asistencia-medica-virtual-1.png" class="d-block w-100" alt="test rapido COVID-19" height="480px">
+                                <div data-aos="fade-up" class="infoEnCarousel carousel-caption d-none d-md-block">
+                                    <a href="https://web.whatsapp.com/"><button class="btn btn-outline-info">Comunicate con nosotros</button></a>
+                                    <h5>CONSULTA MEDICA ONLINE LAS 24 HS</h5>
+                                    <p>Comunicate a nuestro whatsapp a cualquier momento del dia.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/tipos-de-recetas-medicas-en-la-ss-800x450.png" class="d-block w-100" alt="test rapido COVID-19"height="480px">
+                                <div data-aos="fade-up" class="infoEnCarousel carousel-caption d-none d-md-block ">
+                                    <a href="./pages/Atencionalpaciente.html"><button class="btn btn-outline-info">Receta digital</button></a>
+                                    <h5>SOLICITA TU RECETA</h5>
+                                    <p>Solicita tu receta digital en forma facil y rapida.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/Calidad de institucion.png" class="d-block w-100 bg.white" alt="CalidadDeInstitucion "height="480px">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
-                        <div class="collapse navbar-collapse fs-2" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">HOME</a></li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="pages/Serviciosmedicos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            SERVICIOS MEDICOS
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li ><a class="dropdown-item" href="pages/Serviciosmedicos.html#Especialidadesmed">Especialidades Medicas</a></li>
-                                            <li><a class="dropdown-item" href="pages/Serviciosmedicos.html#estudiosyproced">Estudios y procedimientos</a></li>
-                                        </ul>                                
-                                    <li class="nav-item"><a class="nav-link" href="pages/Atencionalpaciente.html">ATENCION AL PACIENTE</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="pages/Turnos.html">TURNOS</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="pages/Contacto.html">CONTACTO</a></li>
-                                </ul>
-                        </div>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                </nav>
+                </div>
             </div>
-        </header>   
-            <div id="contenedor">
-            <!-- inicio contenido -->
-                <section id="section1"> 
-                    <div class="parallax2 imgQuienesSomos"><h2>¿QUIENES SOMOS?</h2></div>
-                    <div class="quienesSomos">
-                        <p>Somos un Centro de Atención Médica que mediante la integración de diferentes especialidades, nos enfocamos en la asistencia de nuestros pacientes desde su nacimiento y logramos ganar su confianza con calidad humana, calidez, buen trato y con un óptimo nivel de atención profesional.
-                        Brindamos la infraestructura e instalaciones modernas con amplias salas de espera y consultorios cómodos para que los profesionales médicos atiendan a sus pacientes en un ambiente confortable y adecuadamente equipado.
-                        La administración del Centro corrobora que los profesionales cuenten con los requisitos de idoneidad en su especialidad y la correspondiente habilitación para su ejercicio.  Además, desarrollan su actividad de manera autónoma y establecen el nexo con Coberturas Médicas y Obras Sociales, a fin de brindar a sus afiliados el acceso a una atención médica calificada.</p>
-                        <p>El Centro Integral Caballito fue fundado por el Dr. Argente Sebastian en el año 2007 iniciado en ese entonces como su consultorio particular. Con la absoluta convicción, destinó sus estudios a la medicina clínica traumatologica y con ella incorporó la medicina preventiva. Así, con un gran amor por su profesión y una definida vocación de servicio, comenzó a crecer su sueño. Con los años sumó al proyecto a excelentes profesionales y equipamiento de vanguardia lo que permitió que el Centro Integral Caballito comenzara a crecer e incorporara una gran variedad de Servicios y Especialidades Médicas. Hoy en dia ya contamos con mas de 100 profesionales que dia a dia aportan su sabiduria y conocimiento a fin de brindar la calidad que caracteriza a nuestro centro.</p>
-                        <div data-aos="fade-right" data-aos-offset="300"data-aos-easing="ease-in-sine" class="quienesSomos__horarios">
-                            <img src="./images/reloj.png" alt="tiempo">
-                            <h3>HORARIOS DE ATENCION</h3>
-                            <table>
-                                <tr>
-                                    <td>Lunes a Viernes</td>
-                                    <td>De 08hs a 21hs.</td>
-                                </tr>
-                                <tr>
-                                    <td>Sabados y Domingos</td>
-                                    <td>Solo atencion por guardia.</td>
-                                </tr>
-                            </table>
-                            <a href="./pages/Serviciosmedicos.html#profesionalesMedicos"><button>VER MAS</button></a>
+        </section>
+        <!--¿QUIENES SOMOS? ---> 
+        <section id="qs" class="quienesSomos container-fluid d-flex flex-column justify-content-center align-items-center pt-3 pb-3">
+            <h2 class="p-3 border-top border-3">¿QUIENES SOMOS?</h2>
+            <div class="nosotros">
+                <p class="p-1">
+                    Somos un Centro de Atención Médica que mediante la integración de diferentes especialidades, nos enfocamos en la asistencia de nuestros pacientes desde su nacimiento y logramos ganar su confianza con calidad humana, calidez, buen trato y con un óptimo nivel de atención profesional.
+                    Ubicado en el barrio de Caballito CABA, brindamos la infraestructura e instalaciones modernas con amplias salas de espera y consultorios cómodos para que los profesionales médicos atiendan a sus pacientes en un ambiente confortable y adecuadamente equipado.
+                    La administración del Centro corrobora que los profesionales cuenten con los requisitos de idoneidad en su especialidad y la correspondiente habilitación para su ejercicio.  Además, desarrollan su actividad de manera autónoma y establecen el nexo con Coberturas Médicas y Obras Sociales, a fin de brindar a sus afiliados el acceso a una atención médica calificada.
+                </p>
+                <p class="p-1">
+                    El Centro Integral Caballito fue fundado por el Dr. Argente Sebastian en el año 2007 iniciado en ese entonces como su consultorio particular. Con la absoluta convicción, destinó sus estudios a la medicina clínica traumatologica y con ella incorporó la medicina preventiva. Así, con un gran amor por su profesión y una definida vocación de servicio, comenzó a crecer su sueño. Con los años sumó al proyecto a excelentes profesionales y equipamiento de vanguardia lo que permitió que el Centro Integral Caballito comenzara a crecer e incorporara una gran variedad de Servicios y Especialidades Médicas. Hoy en dia ya contamos con mas de 100 profesionales que dia a dia aportan su sabiduria y conocimiento a fin de brindar la calidad que caracteriza a nuestro centro.
+                </p>
+            </div>
+            <div class="mision-vision-valores">
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center text-center">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div data-aos="fade-down" class="cuadro p-2">
+                                <h2>MISIÓN</h2>
+                                <p>
+                                    Mejorar la salud y rendimiento de nuestros pacientes, con un enfoque en la prevención, poniendo a su disposición profesionales de excelencia y un trato personal y humanizado, para que, a través de criterios científicos y tecnología adecuada, puedan desarrollar y alcanzar su máximo potencial.
+                                    Satisfacer de manera eficaz y eficiente las necesidades de cuidado de salud de la comunidad. Brindar a toda la comunidad la mejor atención medica basada en la evidencia científica y contenido ético, acompañando al paciente y su familia.
+                                    Colaborar con la Educación del paciente, su familia y la sociedad, brindando cuidado y promoción de actitudes saludables.
+                                    Garantizar la revisión y actualización de los conocimientos, procesos, tecnologías y estructuras, gestionando nuestros recursos con racionalidad económica de forma transparente y honesta.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div data-aos="fade-up" class="cuadro p-2">
+                                <h2>VISIÓN</h2>
+                                <p>
+                                    Aspiramos al liderazgo y la consecución de la excelencia para mejorar el sistema de salud argentino y la calidad de vida de nuestros pacientes.
+                                    Crear y sostener un sistema integral de salud privada, que ofrezca un espacio de crecimiento y desarrollo profesional enfocado en la excelencia y calidez en la asistencia al paciente y su familia. Ser una Organización Modelo en Gestión y Asistencia en el cuidado de la Salud.
+                                    Colaborar con la Educación del paciente, su familia y la sociedad, brindando cuidado y promoción de actitudes saludables.
+                                    Garantizar la revisión y actualización de los conocimientos, procesos, tecnologías y estructuras, gestionando nuestros recursos con racionalidad económica de forma transparente y honesta.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div data-aos="fade-left" class="cuadro">
+                                <h2>VALORES</h2>
+                                <ul>
+                                    <li>
+                                        Equidad: En la utilización de los recursos y servicios de la institución sin distinción de edad, género, grupo social, ideología y credo, estado de salud o enfermedad.
+                                    </li>
+                                    <li>
+                                        Responsabilidad: Construir las tareas orientadas al logro de los mejores resultados. Asumir un rol activo dentro de la sociedad.
+                                    </li>
+                                    <li>
+                                        Ética: Mantener una conducta transparente, honesta y ocupada por el confort de todas las personas con las que interactuamos.
+                                    </li>
+                                    <li>
+                                        Compromiso: Desarrollar todas las tareas, enfocando el esfuerzo en brindar atención de calidad a nuestros pacientes y su familia.
+                                    </li>
+                                    <li>
+                                        Eficiencia: Lograr los objetivos utilizando procesos y métodos de trabajo que optimicen el desempeño con la mejor utilización de los recursos.
+                                    </li>
+                                </ul>				
+                            </div>
                         </div>
                     </div>
-                </section>
-                <aside id="aside" data-aos="zoom-out-down">
-                    <iframe src="https://www.youtube.com/embed/tM6nDv8PSD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/WvSdmpTm_B8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/zhsNNiALN2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </aside>
-                <!-- como llegar -->
-                <section id="section3">
-                    <div class="parallax2 imgComoLlegar"><h2>¿COMO LLEGAR?</h2></div>
-                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic"data-aos-duration="2000" class="comoLlegar">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4369275918316!2d-58.445286084769904!3d-34.61839728045571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3ee26f6511%3A0xe0cc3bc284f631a3!2sBacacay%20947%2C%20C1405CFG%20CABA!5e0!3m2!1ses-419!2sar!4v1648509028090!5m2!1ses-419!2sar";" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <div class="comoLlegar--ubicacion">
-                            <p> BACACAY 947, CABA</p>
-                            <ul>
-                                <li><strong>Colectivos</strong> 5 - 6 - 7 - 12 - 24 - 26 - 37 - 50 - 56 - 59 - 60 - 64 - 86 - 103 - 105 - 115 - 146 - 150 - 151 - 168 - 180</li>
-                                <li><strong>Subte</strong> Linea A - Estacion Primera Junta</li>
-                                <li><strong>Tren</strong> Tren Sarmiento - Estacion Caballito</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            <!-- inicio footer -->
-                <footer id="Piedepagina">
-                    <div class="footer">
-                        <a href="#Encabezado"><img src="images/logo.png"  width="100px" height="100" alt="Logo" data-aos="fade-up-right"></a>
-                        <p class="textofooter-textop" data-aos="fade-down" data-aos-easing="linear"data-aos-duration="1500">
-                            Turnos + 54 11 153522 2048 (011) 4431 4358 
-                            | BACACAY 947 - CP 1405
-                            CDAD. DE BS.AS. ARGENTINA
+                </div>
+            </div>
+        </section>
+        <!--¿COMO LLEGAR?-->
+        <section id="comoLlegar" class="container-fluid d-flex flex-column justify-content-center align-items-center pt-3 pb-3 text-center">
+            <div>
+                <h2 class="p-3 border-top border-3">¿COMO LLEGAR?</h2>
+            </div>
+            <div data-aos="zoom-in" class="container-fluid row">
+                <div class="col-12 col-lg-8 col-md-8 col-sm-12">
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4369275918316!2d-58.445286084769904!3d-34.61839728045571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3ee26f6511%3A0xe0cc3bc284f631a3!2sBacacay%20947%2C%20C1405CFG%20CABA!5e0!3m2!1ses-419!2sar!4v1648509028090!5m2!1ses-419!2sar"; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="detalle-mapa col-12 col-lg-4 col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center border">
+                    <i class="bi bi-geo-alt">BACACAY 947, CABA  </i>
+                    <ul>
+                        <li><strong>Colectivos</strong> 5 - 6 - 7 - 12 - 24 - 26 - 37 - 50 - 56 - 59 - 60 - 64 - 86 - 103 - 105 - 115 - 146 - 150 - 151 - 168 - 180</li>
+                        <li><strong>Subte</strong> Linea A - Estacion Primera Junta</li>
+                        <li><strong>Tren</strong> Tren Sarmiento - Estacion Caballito</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--INSTITUCION-->
+        <aside>
+            <div class="institucion container-fluid d-flex flex-column justify-content-center align-items-center pt-3 text-center bg-white">
+                <h3 class="p-3 border-top border-3">
+                    MAS DE 10 AÑOS DE EXPERIENCIA
+                </h3>
+                <p>
+                    Todo lo que tiene que tener un centro medico de calidad, con más de 10 años de experiencia.
+                </p>
+                <h4>Institución Acreditada</h4>
+                <div >
+                    <ul>
+                        <li class="text-decoration-none" >
+                            <img alt="UBA - Facultad de Medicina" src="./images/uba.png">
+                            <h5>
+                                UBA
+                                    <br>
+                                Facultad de Medicina
+                            </h5>
+                        </li>
+                        <li>
+                            <img alt="Fundación Bioquímica Argentina" src="./images/funcacion-bioquimica-argentina.png">
+                            <h5>
+                                Fundación
+                                <br>
+                                Bioquímica Argentina
+                            </h5>
+                        </li>
+                        <li>
+                            <img alt="Sociedad Argentina de Cardiología" height="56" src="./images/sociedad-argentina-de-cardiologia.png" width="56">
+                            <h5>
+                                Sociedad Argentina
+                                <br>
+                            de Cardiología
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <!--FOOTER-->
+        <footer id="Piedepagina">
+            <div class="footer">
+                <div class="logo+horario">
+                    <div class="d-flex flex-column align-items-center">
+                        <a href="#header"><img class="shadow-lg p-1 mb-2 bg-body rounded" src="./images/LOGO2.png" alt="Logo" data-aos="fade-up-right" width="230px" height="120px"></a>
+                        <p>
+                            <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                                Horario de atencion
+                            </button>
                         </p>
-                        <a href="./pages/Contacto.html">¿Queres trabajar con nosotros? Hace Click aca</a>
+                        <div style="min-height: 50px">
+                            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                <div class="card card-body fs-6">
+                                    Lunes a Sabados de 8 a 20 hs - Atencion virtual y telefonica de 24 hs.
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <aside><div class="footerFinal">
-                        <h3 class="textofooter-textoh3">Trabajamos con</h3>
-                        <a href="https://www.osde.com.ar/index.html#!homepage.html" target="_BLANK"><img src="./images/OSDE.jpg" width="100" height="100" alt="Osde"></a>
-                        <a href="https://www.e-galenomovil.com.ar/CotizadorWeb/" target="_BLANK"><img src="./images/galeno.png" width="100" height="100" alt="Galeno"></a>
-                        <a href="https://www.medife.com.ar/landing-quiero-asociarme?gclid=CjwKCAjwuYWSBhByEiwAKd_n_hf0Ho7wUshkabRj5cpYHctGdEKjhBSROXi-KO9DPJNmHGae7Pq7nRoCspQQAvD_BwE" target="_BLANK"><img src="./images/Medife.png" width="100" height="100" alt="Medife"></a>
-                        <a href="https://www.accordsalud.com.ar/comercial/?gclid=CjwKCAjwuYWSBhByEiwAKd_n_ivwdPMltAnY2cFF9SFViv49GkQT3ThVn-gT7jHZUXdrGANeD6P7rBoCsH8QAvD_BwE" target="_BLANK"><img src="./images/accord.png" width="100" height="100" alt="Accord salud"></a>
-                        <a href="https://www.sancorsalud.com.ar/" target="_BLANK"><img src="./images/sancor.png" width="100" height="100" alt="Sancor Salud"></a>
-                        <a href="https://asociarme.swissmedical.com.ar/planes?utm_source=google&utm_medium=cpc&utm_campaign=GOOG-SEM-L-ALL-ALL-PROS-BRAND-CABA&gclid=CjwKCAjwuYWSBhByEiwAKd_n_raFtACPO2ES7kxn5pQZYc2hGJ7GuCfTs2DrjkhM-ULHeFx0P7PEzhoC7PwQAvD_BwE" target="_BLANK"><img src="./images/sw2.jpg" width="100" height="100" alt="Swiss Medical"></a>
-                    </aside>
-                    <P>Desarrollado por Tomas Perrone</P>
-                </footer>
+                </div>
+                <div class="lista">
+                    <div class="mx-3">
+                        <h2>
+                            SOBRE NOSOTROS
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="index.html#qs">QUIENES SOMOS</a>
+                            </li>
+                            <li>
+                                <a href="./pages/Serviciosmedicos.html#especialidadesMedicas">
+                                    ESPECIALIDADES
+                                </a>
+                            </li>
+                            <li ><a href="./pages/Serviciosmedicos.html">OBRAS SOCIALES</a></li>
+                        </ul>
+                    </div>
+                    <div class="mx-3">
+                        <h2>
+                            SERVICIOS Y PRESTACIONES
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="./pages/Turnos.html">SOLICITA TU TURNO</a>
+                            </li>
+                            <li>
+                                <a href="./pages/Atencionalpaciente.html#receta">
+                                    SOLICITA TU RECETA
+                                </a>
+                            </li>
+                            <li ><a href="./pages/Atencionalpaciente.html#atencionDomiciliaria">ATENCION MEDICA DOMICILIARIA</a></li>
+                            <li ><a href="./pages/Contacto.html">¿QUERES TRABAJAR CON NOSOTROS? HACE CLICK ACA</a>
+                        </ul>
+                    </div>
+                    <div class="mx-3 d-flex justify-content-center align-items-center">
+                        <a class="m-2 facebook" href="https://www.facebook.com/" target="_BLANK"><i class="bi bi-facebook "></i></a>
+                        <a class="m-2 linkedin" href="https://ar.linkedin.com/" target="_BLANK"><i class="bi bi-linkedin  "></i></a>
+                        <a class="m-2 instagram" href="https://www.instagram.com/"target="_BLANK"><i class="bi bi-instagram "></i></a>
+                        <a class="m-2 whatsapp" href="https://web.whatsapp.com/" target="_BLANK"><i class="bi bi-whatsapp">+ 54 11 153522 2048</i></a>
+                        <a class="ubi" href="index.html#comoLlegar"><i class="bi bi-geo-alt ">Bacacay 947, CABA</i></a>
+                    </div>
+                </div>
             </div>
+        </footer>
+        <p
+        class="tapdesign">Copyright © 2022 Todos los derechos reservados | Centro Integral Caballito | Hecho por: Tap Design
+        </p>
+        </body>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
-        <script src="scripts/bootstrap.bundle.min.js"></script>
+        <script src="./scripts/bootstrap.bundle.min.js"></script>
     </body>
 </html>
